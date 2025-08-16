@@ -34,3 +34,26 @@ console.log(typeof myFunction);
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof scoreValue);
+
+
+//----------------------------------
+//stack memory vs heap memory
+// stack (primitive data types)
+// heap (non-primitive data types)
+
+
+let myName = "hamna";
+let anotherName = myName;
+anotherName = "hamna2";
+
+console.log(myName);
+console.log(anotherName);
+
+let user1 = {
+  email: "hamna@gmail.com",
+  upi: "hamna@ybl",
+};
+let user2 = user1;
+user2.email = "hamna2@gmail.com";
+console.log(user1.email);
+console.log(user2.email);
