@@ -32,7 +32,37 @@ function loginUser(username = "Hamna") {
   return `${username} just logged in`;
 }
 
-console.log(loginUser("Hammad"));
+// console.log(loginUser("Hammad"));
 
 // const user1 = loginUser("Hamna");
 // console.log(user1);
+ 
+
+function calculateCartPrice(var1 , var2, ...num1) {
+  // ... is called rest operator
+  return num1;
+}
+
+// console.log(calculateCartPrice(100, 200, 300 , 400));
+
+
+// const user = {
+//     username : "Hamna",
+//     id : "001"
+// }
+
+function handleObject (anyObj){
+    console.log(`Username is ${anyObj.username} and id is ${anyObj.id} `);
+}
+
+handleObject({
+    username : "Hammad",
+    id : "002"
+});
+
+const myNewArray = [200 ,300,400,500];
+function returnSecondValue(getArray){
+ return getArray[1];
+}
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100,500,400,800]));
